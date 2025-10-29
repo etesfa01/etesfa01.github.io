@@ -271,8 +271,15 @@ section{
     display: flex;
 }
 
-.about-pic{
-    border-radius: 2rem;
+.about-pic {
+  width: 220px;           /* smaller width */
+  height: auto;           /* maintain aspect ratio */
+  object-fit: contain;    /* keeps full image visible */
+  border-radius: 1rem;    /* smooth corners */
+  display: block;
+  margin: 0 auto;         /* centers it */
+  padding: 10px;
+  background-color: white; /* optional: helps contrast against background */
 }
 
 .arrow {
